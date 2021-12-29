@@ -1,0 +1,242 @@
+:root {
+  /* ------------TEXT COLORS------------ */
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+
+  /* ------------NEUTRAL TEXT COLORS------------ */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --shadow: hsla(0, 0%, 0%, 0.4);
+
+  /* ------------GRADIENT COLOR------------ */
+  --gradient: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+
+  /* ------------DIVIDERS------------ */
+  --light-grayish-blue: hsl(240, 5%, 91%);
+
+  /* ------------FONT------------ */
+  --font: 'Kumbh Sans', sans-serif; /* 400, 700 */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 9.38rem 0;
+  max-width: 1440px;
+  min-height: 100vh;
+  font-family: var(--font);
+  font-size: 12px;
+  background: var(--gradient);
+  color: var(--very-dark-grayish-blue);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 8.1rem 0;
+  }
+}
+
+/* ------------CARD------------ */
+.card {
+  position: relative;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8rem 1.56rem 1.7rem 1.56rem;
+  max-width: 20.5rem;
+  height: auto;
+  background-color: var(--white);
+  border-radius: 1.3rem;
+  -webkit-box-shadow: 0 20px 40px var(--shadow);
+  box-shadow: 0 20px 40px var(--shadow);
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 17rem;
+    padding: 3.2rem 5.94rem 3.75rem 0;
+    max-width: 57.5rem;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+/* ------------IMAGE------------ */
+.img-woman {
+  position: absolute;
+  top: -6.75rem;
+  left: 0.94rem;
+}
+
+.img-woman2 {
+  display: none;
+}
+
+.img-shadow {
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+}
+
+.img-shadow2 {
+  display: none;
+}
+
+.img-orangebox {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .img-woman,
+  .img-shadow {
+    display: none;
+  }
+
+  .img-woman2 {
+    display: block;
+    position: relative;
+    top: 1.3rem;
+    left: -5.3rem;
+    z-index: 10;
+  }
+
+  .img-orangebox {
+    display: block;
+    position: absolute;
+    top: 21.1rem;
+    left: 11.25rem;
+    width: 11.88rem;
+    height: 11rem;
+    z-index: 100;
+  }
+
+  .img-shadow2 {
+    position: relative;
+    display: block;
+    bottom: 43.75rem;
+    left: -35rem;
+    width: 200%;
+  }
+
+  .img-container {
+    max-height: 25rem;
+  }
+}
+
+/* ------------CARD-MAIN------------ */
+.main-title {
+  margin-bottom: 2rem;
+  font-size: 2.7em;
+  text-align: center;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.main-box {
+  position: relative;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.main-question {
+  margin-bottom: 0.95rem;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.main-response {
+  display: none;
+  padding-right: 2.19rem;
+  line-height: 1.5;
+  color: var(--dark-grayish-blue);
+}
+
+.main-arrow {
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  padding: 0.31rem;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.main-box.active .main-question {
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.main-box.active .main-response {
+  display: block;
+  margin-bottom: 0.94rem;
+}
+
+.main-box.active .main-arrow {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    padding-top: 0.83rem;
+  }
+
+  .main-title {
+    margin-bottom: 2.24rem;
+    text-align: left;
+  }
+
+  .main-box {
+    margin-bottom: 1.05rem;
+    width: 21.88rem;
+  }
+
+  .main-question {
+    font-size: 1.19em;
+  }
+
+  .main-question:hover {
+    font-weight: 700;
+    color: var(--soft-red);
+    cursor: pointer;
+  }
+
+  .main-response {
+    padding-bottom: 0.1rem;
+  }
+}
+
+/* ------------FOOTER------------ */
+.attribution {
+  font-size: 0.85em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--very-dark-desaturated-blue);
+}
+.attribution a {
+  color: var(--soft-red);
+}
+
+@media screen and (min-width: 1440px) {
+  .attribution {
+    font-size: 1em;
+  }
+}
