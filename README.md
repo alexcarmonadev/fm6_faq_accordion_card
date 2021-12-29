@@ -1,13 +1,13 @@
 # Frontend Mentor - FAQ Accordion Card solution
 
-:point_right: This is the [FAQ Accordion Card](aqui va el reto de frontendmentor) challenge on Frontend Mentor.
+:point_right: This is the [FAQ Accordion Card](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam) challenge on Frontend Mentor.
 
 ## Overview
 
 ### Links
 
-:heavy_check_mark: My `Solution` URL : [Frontend Mentor Solution](Aqui va tu solucion de frontendmentor) </br>
-:heavy_check_mark: My `Live` Site URL : [GitHub Pages](Aqui va tu solucion de github pages)
+:heavy_check_mark: My `Solution` URL : [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/mobile-first-vY9YQcY80) </br>
+:heavy_check_mark: My `Live` Site URL : [GitHub Pages](https://alexcarmonadev.github.io/fm6_faq_accordion_card/)
 
 Give a ⭐️ if you like this project!
 
